@@ -17,7 +17,7 @@ public class ExamenesDAOImpl implements ExamenesDAO {
 
     @Override
     public List<Examen> recuperarExamenes() {
-        List<Examen> lista = List.of();  // Se inicializa con lista vacía
+        List<Examen> lista = List.of(); 
         try (Session se = HibernateUtil.getSessionFactory().openSession()) {
             lista = se.createQuery("FROM Examen", Examen.class).list();
             Logger.info("Exámenes recuperados con éxito. Total: " + lista.size());
@@ -100,7 +100,7 @@ public class ExamenesDAOImpl implements ExamenesDAO {
                 return false;
             }
 
-            PreguntaDeExamen pde = new PreguntaDeExamen(e, p, 0); // Posición por defecto 0, cambiar si necesario
+            PreguntaDeExamen pde = new PreguntaDeExamen(e, p, 0); 
             se.persist(pde);
 
             tr.commit();

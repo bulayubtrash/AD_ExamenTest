@@ -1,0 +1,7 @@
+edu\examen\marzo2025\modelo\util\HibernateUtil.class
+util\HibernateUtil.class
+edu\examen\marzo2025\modelo\PreguntaDeExamen.class
+edu\examen\marzo2025\modelo\Examen.class
+edu\examen\marzo2025\modelo\Pregunta.class
+edu\examen\marzo2025\persistencia\ExamenesDAOImpl.class
+edu\examen\marzo2025\persistencia\ExamenesDAO.class
